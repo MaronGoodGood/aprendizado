@@ -1,0 +1,66 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(to right, rgb(52,50,89),black);
+}
+header{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(128,15,79);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.logo img{
+    width: 45%;
+    padding-top: 50px;
+}
+.navegacao{
+    overflow: hidden;
+}
+.navegacao a{
+    float: right;
+    color: gray;
+    text-decoration: none;
+    padding: 10px;
+}
+.navegacao a:hover{
+    color: rgb(142,183,51);
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+}
+.lateral{
+    float: left;
+    margin: 15px 10px 25px 10px;
+    border-radius: 5px;
+    background-color: rgb(128,15,79);
+    text-align: justify;
+    padding: 15px;
+    box-shadow: 10px 10px 10px rgb(142,183,51);
+    width: 30%;
+}
+.central{
+    float: left;
+    margin: 15px 10px 25px 10px;
+    border-radius: 5px;
+    background-color: rgb(128,15,79);
+    text-align: justify;
+    padding: 15px;
+    box-shadow: 10px 10px 10px rgb(142,183,51);
+    width: 70%;
+}
+.rodape{
+    color: rgb(142,183,51);
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width:600px){ 
+    .body, .principal, .conteudo{ 
+        overflow: hidden;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+    }
+}
